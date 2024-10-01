@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.backgroundpg {
+  background-image: url("/image/bgImg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+.logo {
+  width: 80px;
+}
+
+.logo img {
+  width: 80px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fefefe65;
+  list-style-type: none;
+  overflow: hidden;
+  display: block;
+  justify-content: space-between;
+  align-items: end;
+  padding: 10px;
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+li {
+  float: right;
+  display: block;
+  color: rgb(9, 5, 5);
+  text-align: center;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu button {
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #ab2626;
+  font-size: 14px;
+  font-family: "Playwrite DE Grund", cursive;
+  padding: 4px 8px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  margin-top: 110px;
+}
+
+.hero h1,
+.hero p {
+  max-width: 600px;
+  color: rgb(239, 152, 39);
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+.hero h1 {
+  margin-top: 40%;
+  font-size: 30px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #920e0e; /* Green */
+  color: rgb(205, 10, 10);
+  border-radius: 10px;
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.info h2 {
+  margin-bottom: 2%;
+}
+
+.info h3 {
+  margin-bottom: 5%;
+}
+.image-first {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-first img {
+  width: 90%;
+  height: auto;
+}
+
+.info {
+  flex: 1;
+  font-family: "Playwrite DE Grund", system-ui;
+  margin-left: 20%;
+}
+
+/* --------------------------------------------Media Screen-------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 5px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-menu li {
+    margin: 1px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  li {
+    float: none;
+  }
+  section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero h1 {
+    margin-top: 90%;
+    font-size: 30px;
+  }
+
+  .image-first {
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+
+  .wrapper img {
+    height: 200px;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_nav {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contact {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact h2,
+  .contact .mail,
+  .contact .infoschool {
+    text-align: center;
+  }
+
+  .footerlogo {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footerlogo img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+.rekomendation {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rekomendation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: "Playwrite DE Grund", system-ui;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper p {
+  background-color: rgba(213, 204, 204, 0.153);
+  color: rgb(167, 26, 26);
+  margin: 0;
+  padding: 8px;
+  font-size: 16px;
+  font-family: "Playwrite DE Grund", system-ui;
+}
+
+.cta {
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.cta p {
+  padding: 5px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: "Playwrite DE Grund", system-ui;
+}
+
+p {
+  font-family: "Playwrite DE Grund", system-ui;
+}
+
+.cta button {
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #b02121;
+  padding: 8px;
+  font-size: 14px;
+  font-family: "Playwrite DE Grund", system-ui;
+}
+
+.contact h2 {
+  padding-bottom: 20px;
+  font-family: "Playwrite DE Grund", system-ui;
+}
+
+footer {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.footer_nav {
+  flex: 1;
+  display: block;
+}
+
+.footer_nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer_nav li {
+  padding: 1px;
+  font-family: "Playwrite DE Grund", system-ui;
+}
+
+.footer_nav a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer_nav a:hover {
+  color: #041221; /* Eller valfri accentfärg */
+}
+
+.contact {
+  flex: 1;
+  text-align: left;
+}
+
+.footerlogo {
+  text-align: -webkit-right;
+  margin-top: 4%;
+}
+
+.footerlogo img {
+  max-width: 150px;
+}
+.mail {
+  margin-bottom: 45px;
+}
